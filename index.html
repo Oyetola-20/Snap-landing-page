@@ -20,42 +20,52 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <div class="nav-links">
-          <li><img src="./images/logo.svg" alt="logo" /></li>
-          <a href=""><img src="./images/icon-menu.svg" alt="" class="menu-icon"></a>
-          <div class="grouped-links">
-            <li class="nav"><a href="#">Features<img src="./images/icon-arrow-down.svg" alt=""
-                  style="margin-left: 2px;"></a>
-              <ol>
-                <li><img src="./images/icon-todo.svg" alt="">Todo List</li>
-                <li><img src="./images/icon-calendar.svg" alt="">Calender</li>
-                <li><img src="./images/icon-reminders.svg" alt="">Reminders</li>
-                <li><img src="./images/icon-planning.svg" alt="">Plannng</li>
-              </ol>
-            </li>
-            <li class="nav"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt=""
-                  style="margin-left: 2px;"></a>
-              <ol>
-                <li>History</li>
-                <li>Our team</li>
-                <li>Blog</li>
-              </ol>
-            </li>
-            <li class="nav"><a href="#">Careers</a></li>
-            <li class="nav"><a href="#">About</a></li>
-          </div>
-        </div>
-        <div class="cta">
-          <li><a href="#">Login</a></li>
-          <li>
-            <button id="register">Register</button>
+      <div class="main-nav">
+        <li><img src="./images/logo.svg" alt="logo" /></li>
+
+        <div class="grouped-links">
+          <li class="nav-links nav-dropdown"><a href="#">Features<img src="./images/icon-arrow-down.svg" alt="" id="arrow-down"></a>
+            <ol class="main hidden">
+              <li><img src="./images/icon-todo.svg" alt="">Todo List</li>
+              <li><img src="./images/icon-calendar.svg" alt="">Calender</li>
+              <li><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+              <li><img src="./images/icon-planning.svg" alt="">Plannng</li>
+            </ol>
           </li>
+          <li class="nav-links nav-dropdown"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="" id="arrow-down"></a>
+            <ol class="main hidden">
+              <li>History</li>
+              <li>Our team</li>
+              <li>Blog</li>
+            </ol>
+          </li>
+          <li class="nav-links"><a href="#">Careers</a></li>
+          <li class="nav-links"><a href="#">About</a></li>
         </div>
-      </ul>
+      </div>
+      <div class="cta">
+        <button id="register">Login</button>
+        <button id="register">Register</button>
+      </div>
+      <img src="./images/icon-menu.svg" alt="" id="menu">
     </nav>
+
+    <div class="right-nav hidden animate">
+      <img src="./images/icon-close-menu.svg" alt="" class="close-menu">
+      <div class="links-section">
+        <li class="right-nav-links"><a href="#">Features<img src="./images/icon-arrow-down.svg" alt="" id="arrow-down"></a></li>
+        <li class="right-nav-links"><a href="#">Company <img src="./images/icon-arrow-down.svg" alt="" id="arrow-down"></a></li>
+        <li class="right-nav-links"><a href="#">Careers</a></li>
+        <li class="right-nav-links"><a href="#">About</a></li>
+      </div>
+      <div class="hero">
+        <button id="login">Login</button>
+        <button id="login">Register</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
   </header>
-  <section class="container">
+  <section>
     <div class="hero-desktop">
       <h1>Make <br> remote work</h1>
       <p>Get your team in sync, no matter your location.
@@ -71,11 +81,11 @@
         <img src="./images/client-maker.svg" alt="">
       </footer>
     </div>
-    <figcaption>
-      <img src="./images/image-hero-desktop.png" alt="" id="image">
-    </figcaption>
+    <img src="./images/image-hero-desktop.png" alt="" id="image">
+
   </section>
 
+  <script src="index.js"></script>
 </body>
 
 </html>
